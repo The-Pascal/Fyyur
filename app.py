@@ -13,7 +13,8 @@ from logging import Formatter, FileHandler
 from flask_migrate import Migrate
 from flask_wtf import Form
 from forms import *
-from models import setup_db, Venue, Artist
+from models import setup_db, Venue, Artist, Show
+from sqlalchemy.exc import SQLAlchemyError
 #----------------------------------------------------------------------------#
 # App Config.
 #----------------------------------------------------------------------------#
